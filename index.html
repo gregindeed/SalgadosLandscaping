@@ -5,21 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salgado's Landscaping - San Diego, California</title>
-    <meta name="description" content="Salgado's Landscaping - Offering top-notch landscaping services in San Diego, California.">
+    <meta name="description" content="Expert landscaping services in San Diego. Salgado's Landscaping specializes in residential and commercial landscaping projects.">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100">
-    <div class="min-h-screen bg-center bg-no-repeat bg-cover" style="background-image: url('https://media.discordapp.net/attachments/1123476072042872902/1164735169014550538/thedarkjedi_hyper_realistic_suburban_house._beatiful_landscapin_764e1799-e38b-43e4-b48d-99dabb4e720e.png?ex=65444b28&is=6531d628&hm=af71ed336b25a74123c7c8755575e4de680e167a281f2b41cf5f24275ad47b43&=&width=1004&height=502')">
-        <div class="bg-black bg-opacity-50 h-full">
-            <header class="p-5 text-white">
-                <h1 class="text-4xl font-bold">Salgado's Landscaping</h1>
-                <p>San Diego, California</p>
-            </header>
-            <main class="p-5 text-white">
-                <h2 class="text-2xl mb-4">Welcome to Salgado's Landscaping</h2>
-                <p>Offering the best landscaping services in San Diego. Contact us today for a quote.</p>
-            </main>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow py-4">
+        <div class="container mx-auto px-4">
+            <ul class="flex justify-around">
+                <li><a href="#about" class="text-blue-600">About</a></li>
+                <li><a href="#portfolio" class="text-blue-600">Portfolio</a></li>
+                <li><a href="#contact" class="text-blue-600">Contact</a></li>
+            </ul>
         </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto mt-10 px-4">
+        
+        <!-- Hero Section -->
+        <div class="bg-center bg-no-repeat bg-cover rounded-lg shadow-lg" style="background-image: url('https://media.discordapp.net/attachments/1123476072042872902/1164735169014550538/thedarkjedi_hyper_realistic_suburban_house._beatiful_landscapin_764e1799-e38b-43e4-b48d-99dabb4e720e.png?ex=65444b28&is=6531d628&hm=af71ed336b25a74123c7c8755575e4de680e167a281f2b41cf5f24275ad47b43&=&width=1004&height=502')">
+            <div class="p-5 bg-black bg-opacity-60 rounded-lg">
+                <h1 class="text-white text-4xl font-bold mb-4">Salgado's Landscaping</h1>
+                <p class="text-white">Mastering the art of landscaping in San Diego.</p>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <section id="about" class="mt-10">
+            <h2 class="text-2xl font-bold mb-4">About Us</h2>
+            <p>Salgado's Landscaping has been serving San Diego for over a decade. Specializing in both residential and commercial landscaping, we bring your visions to life. With our team of professional landscapers, we combine creativity with precision, making sure every project stands out. Join the many satisfied homeowners and businesses in San Diego who've transformed their spaces with Salgado's Landscaping.</p>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="mt-10">
+            <h2 class="text-2xl font-bold mb-4">Our Portfolio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- You can replicate this block for each portfolio item -->
+                <div class="bg-gray-200 rounded-lg p-4">
+                    <img src="path_to_image1.jpg" alt="Landscaping project 1" class="w-full h-40 object-cover rounded">
+                    <p class="mt-2">Project Description 1</p>
+                </div>
+                <!-- End of portfolio item -->
+            </div>
+        </section>
+
+        <!-- Contact Footer Section -->
+        <footer id="contact" class="mt-10 bg-blue-600 text-white p-10 rounded-lg">
+            <h3 class="text-2xl font-bold mb-4">Contact Us</h3>
+            <p><strong>Address:</strong> 1234 Elm Street, San Diego, CA 92101</p>
+            <p><strong>Email:</strong> contact@salgadoslandscaping.com</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+        </footer>
+
     </div>
+
 </body>
 </html>
