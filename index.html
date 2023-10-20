@@ -7,12 +7,44 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.17/dist/tailwind.min.css" rel="stylesheet">
     <style>
         /* Custom CSS styles can be added here */
+        /* Adjust colors to match your landscaping theme */
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        /* Fixed navbar styles */
+        #navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #2c3e50; /* Navbar background color */
+            z-index: 1000;
+        }
+
+        /* Navbar link styles */
+        #navbar a {
+            color: #fff; /* Navbar link color */
+            transition: color 0.3s;
+        }
+
+        #navbar a:hover {
+            color: #f1c40f; /* Navbar link color on hover */
+        }
+
+        /* Container with margin to prevent full width */
+        .content-container {
+            max-width: 1200px; /* Adjust the maximum width as needed */
+            margin: 0 auto;
+            padding: 0 20px;
+        }
     </style>
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="font-sans">
   <!-- Navigation -->
-  <nav class="bg-transparent text-white py-4 fixed w-full top-0 transition duration-300" id="navbar">
-    <div class="container mx-auto flex justify-between items-center">
+  <nav class="bg-transparent text-white py-4" id="navbar">
+    <div class="content-container flex justify-between items-center">
         <a href="#" class="text-2xl font-bold">Salgados Landscaping</a>
         <div class="space-x-4">
             <a href="#" class="hover:text-yellow-500">Home</a>
@@ -26,7 +58,7 @@
    <!-- Hero Section -->
 <header class="bg-cover bg-center py-32 relative" style="background-image: url('https://media.discordapp.net/attachments/1123476072042872902/1164735129336418444/thedarkjedi_hyper_realistic_suburban_house._beatiful_landscapin_1ef180ce-3737-477a-a41e-d5b54f057efb.png?ex=65444b1e&is=6531d61e&hm=bb46a292fde9ac4669d298f33e7365fcf018f9b2071f06c684aac4120d0bc435&=&width=1004&height=502');">
     <div class="absolute inset-0 bg-black opacity-50"></div>
-    <div class="container mx-auto max-w-screen-xl text-center relative z-10">
+    <div class="content-container text-center relative z-10">
         <!-- Logo -->
         <img src="your-landscaping-logo.png" alt="Salgados Landscaping Logo" class="mx-auto mb-4 w-24 h-24" />
 
@@ -39,7 +71,7 @@
 
     <!-- About Section -->
     <section class="bg-white py-16">
-        <div class="container mx-auto max-w-screen-xl text-center">
+        <div class="content-container text-center">
             <h2 class="text-3xl font-semibold mb-8">About Us</h2>
             <p class="text-gray-700 leading-relaxed mx-auto max-w-3xl">Salgados Landscaping is your trusted partner in creating beautiful outdoor spaces. With a passion for nature and a commitment to excellence, we transform landscapes into works of art. We proudly serve all of San Diego, California.</p>
         </div>
@@ -47,7 +79,7 @@
 
     <!-- Services Section -->
     <section class="bg-gray-100 py-16">
-        <div class="container mx-auto max-w-screen-xl text-center">
+        <div class="content-container text-center">
             <h2 class="text-3xl font-semibold mb-8">Our Services</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 <div class="bg-white p-6 rounded-lg shadow-lg">
@@ -71,7 +103,7 @@
 
     <!-- Portfolio Section -->
     <section class="bg-white py-16">
-        <div class="container mx-auto max-w-screen-xl text-center">
+        <div class="content-container text-center">
             <h2 class="text-3xl font-semibold mb-8">Portfolio</h2>
             <!-- Add your portfolio images and descriptions here -->
         </div>
@@ -79,7 +111,7 @@
 
     <!-- Contact Section -->
     <section class="bg-blue-900 text-white py-16">
-        <div class="container mx-auto max-w-screen-xl text-center">
+        <div class="content-container text-center">
             <h2 class="text-3xl font-semibold mb-8">Contact Us</h2>
             <p class="text-gray-300">Ready to enhance your outdoor spaces? Contact us today.</p>
             <a href="contact.html" class="mt-6 inline-block bg-yellow-500 text-blue-900 hover:bg-yellow-400 hover:text-blue-800 py-3 px-6 rounded-lg text-lg font-semibold transition duration-300">Contact Now</a>
@@ -88,7 +120,7 @@
 
     <!-- Footer -->
     <footer class="bg-blue-900 text-white py-8">
-        <div class="container mx-auto text-center">
+        <div class="content-container text-center">
             <p>&copy; 2023 Salgados Landscaping</p>
         </div>
     </footer>
