@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salgados Landscaping</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.17/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS styles can be added here */
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+  <!-- Navigation -->
+  <nav class="bg-transparent text-white py-4 fixed w-full top-0 transition duration-300" id="navbar">
+    <div class="container mx-auto flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold">Salgados Landscaping</a>
+        <div class="space-x-4">
+            <a href="#" class="hover:text-yellow-500">Home</a>
+            <a href="#" class="hover:text-yellow-500">Services</a>
+            <a href="#" class="hover:text-yellow-500">Portfolio</a>
+            <a href="#" class="hover:text-yellow-500">Contact</a>
+        </div>
+    </div>
+</nav>
+
+   <!-- Hero Section -->
+<header class="bg-cover bg-center py-32 relative" style="background-image: url('your-landscaping-image.jpg');">
+    <div class="absolute inset-0 bg-black opacity-50"></div>
+    <div class="container mx-auto text-center relative z-10">
+        <!-- Logo -->
+        <img src="your-landscaping-logo.png" alt="Salgados Landscaping Logo" class="mx-auto mb-4 w-24 h-24" />
+
+        <!-- Title -->
+        <h1 class="text-4xl sm:text-5xl text-white font-bold leading-tight mb-4">Transforming Your Outdoor Spaces</h1>
+        <p class="text-xl text-yellow-500">Bringing Nature to Your Doorstep</p>
+        <a href="contact.html" class="mt-8 inline-block bg-yellow-500 text-blue-900 hover:bg-yellow-400 hover:text-blue-800 py-3 px-6 rounded-lg text-lg font-semibold transition duration-300">Contact Us</a>
+    </div>
+</header>
+
+    <!-- About Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-8">About Us</h2>
+            <p class="text-gray-700 leading-relaxed mx-auto max-w-3xl">Salgados Landscaping is your trusted partner in creating beautiful outdoor spaces. With a passion for nature and a commitment to excellence, we transform landscapes into works of art. We proudly serve all of San Diego, California.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-8">Our Services</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <i class="fas fa-tree text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Landscape Design</h3>
+                    <p class="text-gray-700">Customized landscape design that brings your vision to life.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <i class="fas fa-leaf text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Garden Maintenance</h3>
+                    <p class="text-gray-700">Expert care and maintenance to keep your garden thriving.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <i class="fas fa-fire-pit text-4xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Hardscape Construction</h3>
+                    <p class="text-gray-700">Create stunning outdoor living spaces with our hardscape services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-8">Portfolio</h2>
+            <!-- Add your portfolio images and descriptions here -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="bg-blue-900 text-white py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-8">Contact Us</h2>
+            <p class="text-gray-300">Ready to enhance your outdoor spaces? Contact us today.</p>
+            <a href="contact.html" class="mt-6 inline-block bg-yellow-500 text-blue-900 hover:bg-yellow-400 hover:text-blue-800 py-3 px-6 rounded-lg text-lg font-semibold transition duration-300">Contact Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Salgados Landscaping</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Navbar Background Color -->
+    <script>
+        window.addEventListener('scroll', function () {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 0) {
+                navbar.classList.remove('bg-transparent');
+                navbar.classList.add('bg-blue-900');
+            } else {
+                navbar.classList.remove('bg-blue-900');
+                navbar.classList.add('bg-transparent');
+            }
+        });
+    </script>
+</body>
+</html>
